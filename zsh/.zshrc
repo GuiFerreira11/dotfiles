@@ -12,7 +12,9 @@ compinit
 # End of lines added by compinstall
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/asdf-vm/asdf.sh
+
+export ASDF_DATA_DIR="/home/gui/.asdf"
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
 
 export PATH=/home/gui/.local/bin:$PATH
 export PATH=/home/gui/.cargo/bin:$PATH
